@@ -4,50 +4,13 @@ You can use the [editor on GitHub](https://github.com/Darkloid/darkloid.github.i
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Darkloid/darkloid.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
-### New
-
+### PPPoE断线自动重拨
+2021/3/6
 ```
 任务计划程序中添加任务
-
-触发器：当特定事件被记录时
-
-日志：应用程序
-
-源：RasCient
-
-事件ID：20226
-
-操作：启动程序rasdial <PPPoE名称> <用户名> <密码>
+- 触发器：当特定事件被记录时
+- 日志：应用程序
+- 源：RasCient
+- 事件ID：20226
+- 操作：启动程序rasdial <PPPoE名称> <用户名> <密码>
 ```
