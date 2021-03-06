@@ -1,6 +1,8 @@
 # Frequently Used Commands 常用命令整理
 
-## Windows 10使用内置照片查看器而不是照片应用
+[# 1.]
+
+## 1. Windows 10使用内置照片查看器而不是照片应用
 注册表文件内容：
 ```
 Windows Registry Editor Version 5.00
@@ -27,7 +29,7 @@ Windows Registry Editor Version 5.00
 @="PhotoViewer.FileAssoc.Tiff"
 ```
 
-## PPPoE断线自动重拨
+## 2. PPPoE断线自动重拨
 (来源：https://blog.csdn.net/JackDual/article/details/110866600)
 
 `任务计划程序`中添加任务：
@@ -40,7 +42,7 @@ Windows Registry Editor Version 5.00
 - 操作：启动程序rasdial <PPPoE名称> <用户名> <密码>
 ```
 
-## Windows 7/8.1/10 安装时跳过oobe的方法（重点项打"√"）
+## 3. Windows 7/8.1/10 安装时跳过oobe的方法（重点项打"√"）
 (来源：https://www.cnblogs.com/qbj196/p/12585269.html)
 
 1. U盘引导启动，正常步骤安装，自动重启
@@ -111,7 +113,7 @@ SetupType = 0
 ```
 14. `文件>卸载配置单元`，重启后就能直接进入桌面或开始屏幕
 
-## 隐藏库、回收站、家庭组、网络、视频、图片、文档、下载、音乐、桌面（未试验）
+## 4. 隐藏库、回收站、家庭组、网络、视频、图片、文档、下载、音乐、桌面（未试验）
 (来源：https://www.cnblogs.com/qbj196/p/12591745.html)
 
 ```
