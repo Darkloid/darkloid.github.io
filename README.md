@@ -23,8 +23,7 @@
 @="PhotoViewer.FileAssoc.Tiff" 
 ; Change Extension's File Type 
 [HKEY_CURRENT_USER\Software\Classes\.ico] 
-@="PhotoViewer.FileAssoc.Tiff"
-```
+@="PhotoViewer.FileAssoc.Tiff"```
 
 ## PPPoE断线自动重拨
 (来源：https://blog.csdn.net/JackDual/article/details/110866600)
