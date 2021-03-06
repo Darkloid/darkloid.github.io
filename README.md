@@ -1,10 +1,10 @@
 # Frequently Used Commands 常用命令整理
 
-## 1. Windows 10使用内置照片查看器而不是照片应用
+## Windows 10使用内置照片查看器而不是照片应用
 
-## 2. PPPoE断线自动重拨
+## PPPoE断线自动重拨
 来源：https://blog.csdn.net/JackDual/article/details/110866600
-```任务计划程序```中添加任务：
+1. ```任务计划程序```中添加任务：
 ```- 触发器：当特定事件被记录时
 - 日志：应用程序
 - 源：RasCient
