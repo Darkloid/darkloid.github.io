@@ -28,8 +28,9 @@ Windows Registry Editor Version 5.00
 ```
 
 ## PPPoE断线自动重拨
-(来源：https://blog.csdn.net/JackDual/article/details/110866600)</br>
-```任务计划程序```中添加任务：
+(来源：https://blog.csdn.net/JackDual/article/details/110866600)
+
+`任务计划程序`中添加任务：
 ```- 触发器：当特定事件被记录时
 - 日志：应用程序
 - 源：RasCient
