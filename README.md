@@ -1,7 +1,5 @@
 # Frequently Used Commands 常用命令整理
 
-[1. Windows 10使用内置照片查看器而不是照片应用](#windows-10%E4%BD%BF%E7%94%A8%E5%86%85%E7%BD%AE%E7%85%A7%E7%89%87%E6%9F%A5%E7%9C%8B%E5%99%A8%E8%80%8C%E4%B8%8D%E6%98%AF%E7%85%A7%E7%89%87%E5%BA%94%E7%94%A8)
-
 ## 1. Windows 10使用内置照片查看器而不是照片应用
 注册表文件内容：
 ```
