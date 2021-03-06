@@ -35,3 +35,10 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+任务计划程序中添加任务
+触发器：当特定事件被记录时
+日志：应用程序
+源：RasCient
+事件ID：20226
+操作：启动程序rasdial [PPPoE名称] [用户名] [密码]
