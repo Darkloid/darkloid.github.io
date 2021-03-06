@@ -2,7 +2,8 @@
 
 ## Windows 10使用内置照片查看器而不是照片应用
 注册表文件如下：
-```Windows Registry Editor Version 5.00
+```
+Windows Registry Editor Version 5.00
 ; Change Extension's File Type 
 [HKEY_CURRENT_USER\Software\Classes\.jpg] 
 @="PhotoViewer.FileAssoc.Tiff" 
@@ -23,7 +24,8 @@
 @="PhotoViewer.FileAssoc.Tiff" 
 ; Change Extension's File Type 
 [HKEY_CURRENT_USER\Software\Classes\.ico] 
-@="PhotoViewer.FileAssoc.Tiff"```
+@="PhotoViewer.FileAssoc.Tiff"
+```
 
 ## PPPoE断线自动重拨
 (来源：https://blog.csdn.net/JackDual/article/details/110866600)
