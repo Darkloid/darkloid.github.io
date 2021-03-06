@@ -54,14 +54,12 @@ Windows Registry Editor Version 5.00
 - (系统盘符):\Windows\System32\config\SYSTEM
 - (系统盘符):\Users\Default\NTUSER.DAT（Win10，文件是隐藏的，加载的时候在文件名输入框内直接输入整个路径）
 ```
-
 5. 启用Administrator账户（√）
 
 ```
 【HKEY_USERS\SAM\SAM\Domains\Account\Users\000001F4】
 修改“F”的值中的"11"为"10"（倒数第三行第一个数）
 ```
-
 6. 不安装系统内置Metro应用，但可以使用应用商店和更改电脑设置（Win8/8.1/10）
 
 ```
@@ -76,7 +74,6 @@ Windows Registry Editor Version 5.00
 【HKEY_USERS\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ShellServiceObjects\{F56F6FDD-AA9D-4618-A949-C1B91AF43B1A}\】
 删除“AutoStart”
 ```
-
 8. 不跳过"OOBE"（Win8/8.1/10；8/8.1/10跳过OOBE会导致输入法有问题不能使用，这一步可以使安装过程不用做任何选择，直接抵达桌面）（√）
 
 ```
@@ -85,14 +82,12 @@ Windows Registry Editor Version 5.00
 删除Plugins\下的所有子项，切勿直接删除Plugins（Win10）
 删除Wizard\下的所有子项，切勿直接删除Wizard（Win10）
 ```
-
 9. 跳过“你好”动画（Win8/8.1/10）
 
 ```
 【HKEY_USERS\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\】
 EnableFirstLogonAnimation = 0
 ```
-
 10. 修改计算机名
 
 ```
@@ -102,7 +97,6 @@ ComputerName = X
 Hostname = X
 NV Hostname = X
 ```
-
 11. 禁用某些服务启动
 
 ```
@@ -111,7 +105,6 @@ BITS\，CscService\，DPS\，iphlpsvc\，PcaSvc\，Spooler\，SysMain\，WerSvc\
 DiagTrack\，dmwappushservice\，MapsBroker\（Win10）
 Start = 4
 ```
-
 12. 跳过"OOBE"（Win7）（√）
 
 ```
@@ -121,12 +114,10 @@ OOBEInProgress = 0
 SetupPhase = 0
 SetupType = 0
 ```
-
 13. 防止OneDrive自动安装（Win10）
 
 ```
 【HKEY_USERS\NTUSER.DAT\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\】
 删除“OneDriveSetup”
 ```
-
 14. `文件>卸载配置单元`，重启后就能直接进入桌面或开始屏幕
