@@ -40,7 +40,7 @@ Windows Registry Editor Version 5.00
 - 操作：启动程序rasdial <PPPoE名称> <用户名> <密码>
 ```
 
-## Windows 7/8.1/10 安装时跳过oobe的方法
+## Windows 7/8.1/10 安装时跳过oobe的方法（重点项打"√"）
 (来源：https://www.cnblogs.com/qbj196/p/12585269.html)
 
 1. U盘引导启动，正常步骤安装，自动重启
@@ -55,7 +55,7 @@ Windows Registry Editor Version 5.00
 - (系统盘符):\Users\Default\NTUSER.DAT（Win10，文件是隐藏的，加载的时候在文件名输入框内直接输入整个路径）
 ```
 
-5. **启用Administrator账户**
+5. 启用Administrator账户（√）
 
 ```
 【HKEY_USERS\SAM\SAM\Domains\Account\Users\000001F4】
@@ -77,7 +77,7 @@ Windows Registry Editor Version 5.00
 删除“AutoStart”
 ```
 
-8. **不跳过"OOBE"（Win8/8.1/10；8/8.1/10跳过OOBE会导致输入法有问题不能使用，这一步可以使安装过程不用做任何选择，直接抵达桌面）**
+8. 不跳过"OOBE"（Win8/8.1/10；8/8.1/10跳过OOBE会导致输入法有问题不能使用，这一步可以使安装过程不用做任何选择，直接抵达桌面）（√）
 
 ```
 【HKEY_USERS\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE\Components\】
@@ -112,7 +112,7 @@ DiagTrack\，dmwappushservice\，MapsBroker\（Win10）
 Start = 4
 ```
 
-12. **跳过"OOBE"（Win7）**
+12. 跳过"OOBE"（Win7）（√）
 
 ```
 【HKEY_USERS\SYSTEM\Setup\】
