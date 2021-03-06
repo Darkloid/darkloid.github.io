@@ -4,10 +4,8 @@ You can use the [editor on GitHub](https://github.com/Darkloid/darkloid.github.i
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### PPPoE断线自动重拨
-2021/3/6</br>
+### PPPoE断线自动重拨(2021/3/6)
 ```任务计划程序```中添加任务：
-
 ```
 - 触发器：当特定事件被记录时
 - 日志：应用程序
