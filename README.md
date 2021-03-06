@@ -1,8 +1,7 @@
 # Frequently Used Commands 常用命令整理
-[toc]
 
 ## Windows 10使用内置照片查看器而不是照片应用
-注册表文件如下：
+注册表文件内容：
 ```
 Windows Registry Editor Version 5.00
 ; Change Extension's File Type 
