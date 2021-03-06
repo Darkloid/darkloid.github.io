@@ -38,6 +38,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### New
 
+```
 任务计划程序中添加任务
 
 触发器：当特定事件被记录时
@@ -49,3 +50,4 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 事件ID：20226
 
 操作：启动程序rasdial <PPPoE名称> <用户名> <密码>
+```
