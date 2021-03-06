@@ -58,7 +58,8 @@ Windows Registry Editor Version 5.00
 5. **启用Administrator账户**
 
 ```
-【HKEY_USERS\SAM\SAM\Domains\Account\Users\000001F4】修改“F”的值中的"11"为"10"（倒数第三行第一个数）
+【HKEY_USERS\SAM\SAM\Domains\Account\Users\000001F4】
+修改“F”的值中的"11"为"10"（倒数第三行第一个数）
 ```
 
 6. 不安装系统内置Metro应用，但可以使用应用商店和更改电脑设置（Win8/8.1/10）
