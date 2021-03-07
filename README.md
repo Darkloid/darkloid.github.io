@@ -238,6 +238,7 @@ reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVers
 
 ## 5. 批处理获取IPv6地址
 (来源1：http://www.bathome.net/thread-51504-1-1.html)
+
 (来源2：https://zhidao.baidu.com/question/2115744899758911867.html)
 
 ```
