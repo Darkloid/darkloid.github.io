@@ -235,3 +235,31 @@ reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVers
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{7d83ee9b-2244-4e70-b1f5-5393042af1e4} /f
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d} /f
 ```
+
+## 5. 批处理获取IPv6地址
+(来源1：http://www.bathome.net/thread-51504-1-1.html)
+(来源2：https://zhidao.baidu.com/question/2115744899758911867.html)
+
+```
+@echo off
+setlocal enabledelayedexpansion
+for /f "delims={}" %%i in ('wmic nicConfig where "IPEnabled='True'" get IPAddress ^| find ":"') do (
+    for %%j in (%%i) do (
+        set "IPv6=%%~j"
+    )
+)
+set ipv6=!IPv6!
+echo %ipv6%
+
+for /f "skip=7 tokens=*" %%a in ('ipconfig') do (
+set str=%%a&goto 1
+)
+
+:1
+for /f "tokens=2 delims=:" %%b in ("%str%") do (
+set ip=%%b
+)
+
+set "ipv4=%ip:~1,20%"
+echo %ipv4%
+```
