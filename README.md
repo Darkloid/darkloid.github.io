@@ -236,31 +236,17 @@ reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVers
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d} /f
 ```
 
-## 5. 批处理获取IPv6地址
-(来源1：http://www.bathome.net/thread-51504-1-1.html)
-
-(来源2：https://zhidao.baidu.com/question/2115744899758911867.html)
+## 5. 批处理获取IPv6和拨号的IPV4地址
+(引用：http://www.bathome.net/thread-51504-1-1.html)
 
 ```
 @echo off
-setlocal enabledelayedexpansion
-for /f "delims={}" %%i in ('wmic nicConfig where "IPEnabled='True'" get IPAddress ^| find ":"') do (
-    for %%j in (%%i) do (
-        set "IPv6=%%~j"
-    )
-)
-set ipv6=!IPv6!
+for /f "delims={}" %%i in ('wmic nicConfig where "IPEnabled='True'" get IPAddress ^| find ":"') do set ip=%%i
+for /f "tokens=3 delims=, " %%i in ("%ip%") do set ipv6=%%i
+set ipv6=%ipv6:~1,-1%
 echo %ipv6%
 
-for /f "skip=7 tokens=*" %%a in ('ipconfig') do (
-set str=%%a&goto 1
-)
-
-:1
-for /f "tokens=2 delims=:" %%b in ("%str%") do (
-set ip=%%b
-)
-
-set "ipv4=%ip:~1,20%"
+for /f "tokens=2 delims=:" %%i in ('ipconfig ^| find "172.20."') do set ipv4=%%i
+set ipv4=%ipv4:~1%
 echo %ipv4%
 ```
