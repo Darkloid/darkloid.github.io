@@ -40,7 +40,7 @@ filename = filename.replace('&' , '%26')
 filename = filename.replace('=' , '%3D')
 filename = filename.replace(' ' , '%20')
 
-url = "http://iyuu.cn/IYUU6284T8564b4f14627a55d57f5bcdca4bc235701b4654a.send?text=" + '【' + tracker + '】' + filename + '%20下载完成（' + size + '）'
+url = "http://iyuu.cn/IYUU***.send?text=" + '【' + tracker + '】' + filename + '%20下载完成（' + size + '）'
 response = requests.get(url=url)
 print(response.text)
 
