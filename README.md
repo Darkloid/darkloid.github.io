@@ -236,7 +236,7 @@ reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVers
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions\{a0c69a99-21c8-4671-8703-7934162fcf1d} /f
 ```
 
-## 5. 批处理获取IPv6和拨号的IPV4地址
+## 5. 批处理获取IPv6和拨号的IPV4地址（弃用）
 (引用：http://www.bathome.net/thread-51504-1-1.html)
 
 ```
@@ -261,4 +261,4 @@ echo %ipv4%
 ## 7. 开机不需密码自动登录 
 （引用：https://blog.csdn.net/weixin_34640051/article/details/118144024） 
 1. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device`的`DevicePasswordLessBuildVersion`原始值为`2`，改为`0` 
-2. 2. 运行`control userpasswords2`或者`netplwiz` 
+2. 运行`control userpasswords2`或者`netplwiz` 
