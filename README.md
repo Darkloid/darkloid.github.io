@@ -257,3 +257,8 @@ echo %ipv4%
 ```
 组策略>>计算机配置>>管理模板>>系统>>Internet 通信管理>>Internet 通信设置>>关闭 Windows 网络连接状态指示器活动测试>>已启用
 ```
+
+## 7. 开机不需密码自动登录 
+（引用：https://blog.csdn.net/weixin_34640051/article/details/118144024） 
+1. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device`的`DevicePasswordLessBuildVersion`原始值为`2`，改为`0` 
+2. 2. 运行`control userpasswords2`或者`netplwiz` 
