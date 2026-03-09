@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hello Darkloid</title>
+  <title>MATLAB 绘图相关代码 | Hello Darkloid</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hello Darkloid">
-<meta property="og:url" content="https://darkloid.github.io/project/">
+  <meta name="description" content="自用MATLAB绘图代码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATLAB 绘图相关代码">
+<meta property="og:url" content="https://darkloid.github.io/project/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/MATLAB-%E7%BB%98%E5%9B%BE%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81/">
 <meta property="og:site_name" content="Hello Darkloid">
+<meta property="og:description" content="自用MATLAB绘图代码">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-03-09T05:03:03.000Z">
+<meta property="article:modified_time" content="2026-03-09T05:05:34.406Z">
 <meta property="article:author" content="Darkloid">
+<meta property="article:tag" content="MATLAB">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/project/atom.xml" title="Hello Darkloid" type="application/atom+xml">
@@ -69,9 +74,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-MATLAB-绘图相关代码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-MATLAB-绘图相关代码" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/project/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/MATLAB-%E7%BB%98%E5%9B%BE%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81/" class="article-date">
   <time class="dt-published" datetime="2026-03-09T05:03:03.000Z" itemprop="datePublished">2026-03-09</time>
@@ -88,8 +91,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/project/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/MATLAB-%E7%BB%98%E5%9B%BE%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81/">MATLAB 绘图相关代码</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      MATLAB 绘图相关代码
     </h1>
   
 
@@ -98,11 +101,22 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>自用MATLAB绘图代码</p>
-        
-          <p class="article-more-link">
-            <a href="/project/%E7%A7%91%E7%A0%94%E7%9B%B8%E5%85%B3/MATLAB-%E7%BB%98%E5%9B%BE%E7%9B%B8%E5%85%B3%E4%BB%A3%E7%A0%81/#more">Read More</a>
-          </p>
-        
+<span id="more"></span>
+
+<h1 id="标准颜色表"><a href="#标准颜色表" class="headerlink" title="标准颜色表"></a>标准颜色表</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#0073bd	0	0.45	0.74</span><br><span class="line">#d9541a	0.85	0.33	0.1</span><br><span class="line">#edb021	0.93	0.69	0.13</span><br><span class="line">#7d2e8f	0.49	0.18	0.56</span><br><span class="line">#78ab30	0.47	0.67	0.19</span><br><span class="line">#4dbfed	0.3	0.75	0.93</span><br><span class="line">#a3142e	0.64	0.08	0.18</span><br></pre></td></tr></table></figure>
+
+<h1 id="字符串相关"><a href="#字符串相关" class="headerlink" title="字符串相关"></a>字符串相关</h1><h2 id="斜体和下标"><a href="#斜体和下标" class="headerlink" title="斜体和下标"></a>斜体和下标</h2><p><code>{\itN_RF}</code> N为斜体，RF为下标</p>
+<h2 id="字符串内混合字体"><a href="#字符串内混合字体" class="headerlink" title="字符串内混合字体"></a>字符串内混合字体</h2><p><code>h=ylabel(&#39;\fontname{宋体}频率\fontname{Times new roman}/Hz&#39;);</code></p>
+<h1 id="坐标轴相关"><a href="#坐标轴相关" class="headerlink" title="坐标轴相关"></a>坐标轴相关</h1><h2 id="坐标轴标签不要用科学计数法"><a href="#坐标轴标签不要用科学计数法" class="headerlink" title="坐标轴标签不要用科学计数法"></a>坐标轴标签不要用科学计数法</h2><p><code>set(gca, &#39;xticklabel&#39;, get(gca, &#39;xtick&#39;), &#39;yticklabel&#39;, get(gca, &#39;ytick&#39;));</code></p>
+<h2 id="坐标轴对数表示"><a href="#坐标轴对数表示" class="headerlink" title="坐标轴对数表示"></a>坐标轴对数表示</h2><p><code>set(gca, &#39;YScale&#39;, &#39;log&#39;);</code></p>
+<h2 id="隐藏坐标轴刻度线和数字"><a href="#隐藏坐标轴刻度线和数字" class="headerlink" title="隐藏坐标轴刻度线和数字"></a>隐藏坐标轴刻度线和数字</h2><p><code>set(gca,&#39;xtick&#39;,[],&#39;xticklabel&#39;,[])</code></p>
+<h1 id="Legend相关"><a href="#Legend相关" class="headerlink" title="Legend相关"></a>Legend相关</h1><h2 id="Legend横排"><a href="#Legend横排" class="headerlink" title="Legend横排"></a>Legend横排</h2><p><code>set(hl,&#39;Orientation&#39;,&#39;horizon&#39;);</code></p>
+<h2 id="Legend只显示某条曲线"><a href="#Legend只显示某条曲线" class="headerlink" title="Legend只显示某条曲线"></a>Legend只显示某条曲线</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p1 = plot(); p2 = plot(); p3 = plot(); p4 = plot();</span><br><span class="line">lgd = legend([p4 p1 p2 p3],&#123;&#x27;p4&#x27;,&#x27;p1&#x27;,&#x27;p2&#x27;,&#x27;p3&#x27;&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="Legend分列"><a href="#Legend分列" class="headerlink" title="Legend分列"></a>Legend分列</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">legend(&#123;&#x27;cos(x)&#x27;,&#x27;cos(2x)&#x27;,&#x27;cos(3x)&#x27;,&#x27;cos(4x)&#x27;&#125;,&#x27;Location&#x27;,&#x27;northwest&#x27;,&#x27;NumColumns&#x27;,2)</span><br></pre></td></tr></table></figure>
+
+<h1 id="Colorbar相关"><a href="#Colorbar相关" class="headerlink" title="Colorbar相关"></a>Colorbar相关</h1><h2 id="给colorbar加标题"><a href="#给colorbar加标题" class="headerlink" title="给colorbar加标题"></a>给colorbar加标题</h2><p><code>h=colorbar;set(get(h,&#39;Title&#39;),&#39;string&#39;,&#39;dB&#39;);</code></p>
+<p><code>h=colorbar;h.Label.String = &#39;Power(dB)&#39;;</code></p>
+
       
     </div>
     <footer class="article-footer">
@@ -115,62 +129,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/project/uncategorized/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2026-03-09T04:35:51.077Z" itemprop="datePublished">2026-03-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/project/uncategorized/hello-world/">Hello World</a>
-    </h1>
+    <a href="/project/uncategorized/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://darkloid.github.io/project/uncategorized/hello-world/" data-id="cuidehPElvc2YWMcHiMEWDjmg" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
 
 
 </section>
